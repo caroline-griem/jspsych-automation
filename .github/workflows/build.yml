@@ -32,3 +32,8 @@ jobs:
         run: npm run test -- --ci --coverage --maxWorkers=2
         env:
           NODE_OPTIONS: "--max-old-space-size=4096" # Increase heap size for jest
+
+      - name: Upload results to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
