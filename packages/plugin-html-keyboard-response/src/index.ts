@@ -2,6 +2,7 @@ import { JsPsych, JsPsychPlugin, ParameterType, TrialType } from "jspsych";
 
 import { version } from "../package.json";
 
+//trying to force codecov bot to update
 const info = <const>{
   name: "html-keyboard-response",
   version: version,
