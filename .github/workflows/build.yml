@@ -34,6 +34,7 @@ jobs:
           NODE_OPTIONS: "--max-old-space-size=4096" # Increase heap size for jest
 
       - name: Upload results to Codecov
+        if: always() # Ensure this step runs even if tests fail
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}

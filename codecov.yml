@@ -1,0 +1,7 @@
+# codecov.yml
+comment:
+  layout: "reach, diff, flags, files"
+  behavior: default
+  require_changes: false  # Show the bot even if coverage hasn't changed
+  require_base: false     # IMPORTANT: Show the table even if main has no data yet
+  require_head: true      # Only show if this PR has data
